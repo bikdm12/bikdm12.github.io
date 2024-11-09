@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #dedede;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 10pt;
+	font-weight: 400;
+	line-height: 20pt;
+}
+
+h1, h2, h3 {
+	color: #000000;
+	font-weight: 600;
+	font-size: 12pt;
+}
+
+strong {
+	font-weight: 600;
+}
+
+a {
+	color: #757575;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+#cv {
+	width: 21cm;
+	height: 29.7cm;
+	background-color: white;
+	margin: auto;
+	padding: 2cm;
+	position: relative;
+	display: grid;
+    grid-template-columns: 7cm 1fr;
+	grid-template-rows: 4cm 1fr;
+	grid-column-gap: 1cm;
+	grid-row-gap: 0cm;
+	text-align: justify;
+}
+
+.Title  {
+	display: none;
+}
+
+.Section {
+	padding-top: 0.5cm;
+}
+
+.SectionTitle {
+	padding-bottom: 0.25cm;
+}
+
+#PHOTO .SectionTitle,
+#STATEMENT .SectionTitle {
+	display:none;
+}
+
+#HEADER {
+	grid-row: 1;
+}
+
+#PHOTO {
+	grid-column: 1;
+	grid-row: 1;
+	display: flex;
+	justify-content: center;
+}
+
+#PHOTO img {
+	width: 4cm;
+	filter: grayscale(100%);
+}
+
+#DMITRY_BIKMETOV {
+	grid-column: 2;
+	display: flex;
+	flex-direction: column;
+	height: 100%; /* Adjust height as needed */
+	position: relative;
+}
+
+#DMITRY_BIKMETOV .Title {
+	display: block;
+	align-self: flex-start;
+}
+
+#DMITRY_BIKMETOV h1 {
+	color: #000000;
+	font-weight: 600;
+	font-size: 36pt;
+	line-height: 36pt;
+}
+
+#DMITRY_BIKMETOV .Content {
+	column-count: 2;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+#LEFT {
+	grid-row: 2;
+	grid-column: 1;
+}
+
+#SKILLS {
+	padding-top: 0cm;
+}
+
+#RIGHT {
+	grid-row: 2;
+	grid-column: 2;
+}
+
+#STATEMENT {
+	text-indent: 2em;
+	padding-top: 0cm;
+}
+
+#POSITION {
+	font-weight: 600;
+	font-size: 10pt;
+	display: flex;
+}
+
+#POSITION .SubsectionTitle, #DESCRIPTION .SubsectionTitle {
+	display: none;
+}
+
+#POSITION .SubsectionContent {
+	display: flex;
+	gap: 1rem;
+	width: 100%;
+}
+
+#POSITION .SubsectionContent p:first-child {
+	flex: 4;
+}
+  
+#POSITION .SubsectionContent p:last-child {
+	flex: 1;
+}
